@@ -1,0 +1,120 @@
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFFC1; /* Light pastel yellow background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Belleza', sans-serif;
+}
+
+.container {
+    margin: 10%;
+    display: flex;
+    background-color: #FFFFFF; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.profile {
+    width: 30%;
+    padding: 20px;
+    background-color: #FFE893; /* Soft yellow-orange background */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 60%; /* Adjusts image position */
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #FB9EC6; /* Warm pink for headings */
+}
+
+.profile p {
+    background-color: #FBB4A5; /* Gentle pink background */
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #FFFFFF; /* White text for contrast */
+}
+
+.profile a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #FB9EC6; /* Warm pink for links */
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
+
+.profile a:hover {
+    color: #E195AB; /* Muted rose on hover */
+}
+
+.experience {
+    width: 70%;
+    padding: 30px;
+    position: relative;
+}
+
+.experience h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FB9EC6; /* Warm pink for headings */
+}
+
+.experience p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333; /* Dark gray for readability */
+}
+
+.portfolio-link {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    background-color: #FBB4A5; /* Gentle pink background */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.portfolio-link:hover {
+    background-color: #FB9EC6; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+.portfolio-link::after {
+    content: "➔";
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-link:hover::after {
+    transform: translateX(5px);
+}
